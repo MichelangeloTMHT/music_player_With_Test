@@ -41,7 +41,7 @@ namespace music_player
         /// Метод который должен вернуть список песень
         /// </summary>
         /// <returns>Метод вернет список песень</returns>
-        public List<Song> Return_List_Song()
+        public List<Song> ReturnListSong()
         {
             return SongsList;
         }

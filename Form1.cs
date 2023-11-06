@@ -64,7 +64,7 @@ namespace music_player
         {
             try
             {     
-                  List<Song> songs = ClassPlayer.Return_List_Song();
+                  List<Song> songs = ClassPlayer.ReturnListSong();
                   string sonng = "";
                   for (int i = 0; i < songs.Count; i++)
                   {
@@ -104,9 +104,9 @@ namespace music_player
         /// <param name="e"></param>
         private void btnInfoSongs_Click(object sender, EventArgs e)
         {
-            List<Song> Songs = ClassPlayer.Return_List_Song();
+            List<Song> songs = ClassPlayer.ReturnListSong();
             string info = "";
-            foreach (Song s in Songs)
+            foreach (Song s in songs)
             {
                 info += s.GetInfo().ToString() + "\n";
             }
