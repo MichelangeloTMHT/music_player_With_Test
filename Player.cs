@@ -12,7 +12,7 @@ namespace music_player
         private List<Song> SongsList { get; set; }
          
         /// <summary>
-        /// Обьявляю список песень в плеере
+        /// Конструктор. Обьявляю список песень в плеере
         /// </summary>
         public Player ()
         {
@@ -23,7 +23,7 @@ namespace music_player
         /// Мето добавит песню в список 
         /// </summary>
         /// <param name="song">Имя песни</param>
-        public void Add_Song(Song song)
+        public void AddSong(Song song)
         {
             SongsList.Add(song);
         }
@@ -32,15 +32,15 @@ namespace music_player
         /// Метод удалит песню из списка
         /// </summary>
         /// <param name="song">Имя песни</param>
-        public void Delete_Song(Song song)
+        public void DeleteSong(Song song)
         {
             SongsList.Remove(song);
         }
         
         /// <summary>
-        /// Метод вернет список песень
+        /// Метод который должен вернуть список песень
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Метод вернет список песень</returns>
         public List<Song> Return_List_Song()
         {
             return SongsList;
@@ -50,10 +50,10 @@ namespace music_player
         /// Метод  вернет песню из списка по имени через метод переходник класса Song
         /// </summary>
         /// <param name="name">Имя песни</param>
-        /// <returns></returns>
+        /// <returns>Возвращает Имя песни которая играет </returns>
         public Song  Play(string name)
         {
-            return SongsList.FirstOrDefault(s => s.Get_Name() == name);
+            return SongsList.FirstOrDefault(s => s.GetName() == name);
         }
 
     }

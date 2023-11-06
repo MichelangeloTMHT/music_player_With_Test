@@ -32,8 +32,8 @@ namespace music_player
         /// <summary>
         /// Метод переходник который возвращает Имя песни (приватный параметр класса Song "Name"
         /// </summary>
-        /// <returns></returns>
-        public  string Get_Name ()
+        /// <returns>Вернет имя песни </returns>
+        public  string GetName ()
         {
             return Name;
         }
@@ -41,8 +41,8 @@ namespace music_player
         /// <summary>
         /// Метод вернет информацию в из какого альбома данная  песня
         /// </summary>
-        /// <returns></returns>
-        public string Get_Info()
+        /// <returns>Вернет имя песни и имя альбома из каторого эта песня</returns>
+        public string GetInfo()
         {
             return $"Name: {Name} | Albom: {Albom}";
         }

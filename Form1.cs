@@ -28,7 +28,7 @@ namespace music_player
         {
             try
             {
-                ClassPlayer.Add_Song(new Song(textBoxNameSong.Text, textBoxNameAlbom.Text));
+                ClassPlayer.AddSong(new Song(textBoxNameSong.Text, textBoxNameAlbom.Text));
             }
             catch (Exception ex)
             {
@@ -47,7 +47,7 @@ namespace music_player
             try
             {
                 Song now = ClassPlayer.Play(textBoxNameSong.Text);
-                   ClassPlayer.Delete_Song(now);
+                   ClassPlayer.DeleteSong(now);
             }
             catch (Exception ex)
             {
@@ -68,7 +68,7 @@ namespace music_player
                   string sonng = "";
                   for (int i = 0; i < songs.Count; i++)
                   {
-                      sonng += songs[i].Get_Name() + "\n";
+                      sonng += songs[i].GetName() + "\n";
                   }
                   MessageBox.Show(sonng);
             }
@@ -89,7 +89,7 @@ namespace music_player
         {
             try
             {
-                MessageBox.Show($"{ClassPlayer.Play(textBoxNameSong.Text).Get_Name()}");
+                MessageBox.Show($"{ClassPlayer.Play(textBoxNameSong.Text).GetName()}");
             }
             catch (Exception ex)
             {
@@ -108,7 +108,7 @@ namespace music_player
             string info = "";
             foreach (Song s in Songs)
             {
-                info += s.Get_Info().ToString() + "\n";
+                info += s.GetInfo().ToString() + "\n";
             }
             MessageBox.Show(info);
         }
