@@ -44,7 +44,7 @@ namespace music_player
         /// <returns></returns>
         public string Get_Info()
         {
-            return $"Name: {Name} | Albom: {Albom}\n";
+            return $"Name: {Name} | Albom: {Albom}";
         }
         
     }

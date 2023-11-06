@@ -78,7 +78,7 @@ namespace music_player
             }
 
         }
-        
+         
         /// <summary>
         /// Событие кнопки Play
         /// </summary>
@@ -108,7 +108,7 @@ namespace music_player
             string info = "";
             foreach (Song s in Songs)
             {
-                info += s.Get_Info().ToString();
+                info += s.Get_Info().ToString() + "\n";
             }
             MessageBox.Show(info);
         }
