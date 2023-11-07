@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "music_player", "music_player.csproj", "{B64AED73-65A9-428B-9145-BF7996CC64BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "music_player.Test", "music_player.Test\music_player.Test.csproj", "{BDD1F5EA-7829-4F77-9F14-79417FE5ECE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B64AED73-65A9-428B-9145-BF7996CC64BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B64AED73-65A9-428B-9145-BF7996CC64BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B64AED73-65A9-428B-9145-BF7996CC64BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD1F5EA-7829-4F77-9F14-79417FE5ECE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD1F5EA-7829-4F77-9F14-79417FE5ECE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD1F5EA-7829-4F77-9F14-79417FE5ECE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD1F5EA-7829-4F77-9F14-79417FE5ECE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
